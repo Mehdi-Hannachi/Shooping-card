@@ -55,12 +55,12 @@ for (let btndelete of buttonsdelete) {
 let hearts = document.querySelectorAll(".fa-heart");
 for (let heart of hearts) {
   heart.addEventListener("click", function () {
-    heart.classList.toggle("red");
+    // heart.classList.toggle("red");
 
-    // if (heart.style.color === "grey") {
-    //   heart.style.color = "red";
-    // } else {
-    //   heart.style.color = "grey";
-    // }
+    if (heart.style.color === "grey") {
+      heart.style.color = "red";
+    } else {
+      heart.style.color = "grey";
+    }
   });
 }
